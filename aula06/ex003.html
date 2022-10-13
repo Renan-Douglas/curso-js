@@ -50,7 +50,7 @@
     </style>
 </head>
 <body>
-    <h1 id="hh1">Hello World!!!</h1>
+    <h1 class="hh1">Hello World!!!</h1>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto quia velit earum, laudantium quod sit ab error iusto veniam qui laborum perferendis nulla adipisci hic magni mollitia dolor eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem doloribus rem porro qui labore incidunt consequatur, at ratione neque aut provident, tempora eos sint molestias similique harum nobis voluptatem repudiandae!</p>
 
@@ -62,12 +62,12 @@
 
     <script>
 
-        var n1 = Number.parseFloat(window.prompt('Digite um numero'));
-        var n2 = Number.parseFloat(window.prompt('Digite outro numero'));
+        var n1 = Number(window.prompt('Digite um numero'));
+        var n2 = Number(window.prompt('Digite outro numero'));
 
         var s = n1 + n2;
 
-        window.alert('A soma dos valores é, ' + s) 
+        window.alert(`A soma entre ${n1} + ${n2} = ${s}`); 
         // + = Adicao ou concatenacao
         // number + number = adicao
         // string + string = concatenacao
