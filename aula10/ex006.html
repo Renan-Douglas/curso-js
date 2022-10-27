@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(36, 43, 61);
+        }
+        div#area {
+            background-color: rgb(35, 180, 47);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 180px;
+            height: 180px;
+            line-height: 180px;
+            text-align: center;
+            font-size: 1.4em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.705);
+            text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.521);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+
+        var arcl = window.document.getElementById('area');
+
+        arcl.addEventListener('click', clicar);
+        arcl.addEventListener('mouseenter', entrar);
+        arcl.addEventListener('mouseout', sair);
+
+        function clicar() {
+            arcl.innerText = 'Clicou!!';
+            arcl.style.background = 'yellow';
+        }
+        function entrar() {
+            arcl.innerText = 'Entrou!!';
+            arcl.style.background = 'blue';
+        }
+        function sair() {
+            arcl.innerText = 'Saiu!!';
+            arcl.style.background = 'red';
+        }
+
+    </script>
+</body>
+</html>
