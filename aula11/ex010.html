@@ -77,22 +77,3 @@
     </script>
 </body>
 </html>
-
-function Verificar() {
-
-    var ptx = document.querySelector('input#txtn');
-    var resultado = document.querySelector('div#res');
-    var pais = ptx.value;
-
-    resultado.innerHTML = `<p>Vivendo em <strong>${pais}</strong></p>`;
-
-        if (pais == 'brasil', 'Brasil') {
-
-            resultado.innerHTML += `<p>Brasileiro</p>`
-
-        } else {
-
-            resultado.innerHTML += `<p>Estrangeiro</p>`
-
-        }
-}
