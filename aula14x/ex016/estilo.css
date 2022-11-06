@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(255, 0, 0, 0.644);
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+[type=button] {
+    border: 1.5px solid rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 1em;
+    background-color: rgba(248, 70, 70, 0.781);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(144, 192, 238, 0.363);
+    cursor: pointer;
+    color: white;
+}
+
+[type=button]:hover {
+    box-shadow: 0px 0px 10px red;
+    transition: 0.8s;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    color: white;
+}
