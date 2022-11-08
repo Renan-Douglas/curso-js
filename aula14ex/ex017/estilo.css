@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(70, 204, 248);
+    background-color: rgb(70, 248, 129);
     font: normal 15pt Arial;
     text-align: center;
 }
 
 header {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 section {
@@ -21,7 +21,7 @@ section {
     border: 1.5px solid rgb(0, 0, 0);
     background-color: transparent;
     font-size: 0.8em;
-    background-color: rgb(70, 204, 248);
+    background-color: rgb(70, 248, 129);
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(144, 192, 238, 0.363);
     cursor: pointer;
@@ -43,11 +43,11 @@ select {
 }
 
 footer {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-style: italic;
 }
 
 a {
-    color: white;
+    color: rgb(0, 0, 0);
 }

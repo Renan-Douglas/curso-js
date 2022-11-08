@@ -5,7 +5,7 @@ function tabuada() {
 
     if (num.value.length == 0) {
 
-        window.alert('Por favor digite um numero');
+        window.alert('[ERRO] Por favor preencha os campos abaixo')
 
     } else {
 
@@ -14,7 +14,7 @@ function tabuada() {
 
         tab.innerHTML = ''
 
-        while (c <= 10) {
+        while (c <= 20) {
 
             let item = document.createElement('option');
 
