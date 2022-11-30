@@ -57,7 +57,7 @@ function adicionar() {
 
         } else {
 
-            alert('Valor invalido ou já encontrado na lista')
+            alert('Valor invalido ou já adicionado a lista')
 
         }
 
