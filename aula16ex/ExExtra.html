@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação do segundo grau</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 8, 0.950);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            margin: auto;
+        }
+
+        main {
+            max-width: 300px;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.123);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            height: 30px;
+            width: 80px;
+            font-size: 1.2em;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #resb {
+            width: 105px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Resolução de equações de segundo grau</h1>
+        <p>preencha os campos abaixo</p>
+        <p>Valor de A  <input type="number" name="Num1" id="delA"></p>
+        <p>Valor de B  <input type="number" name="Num2" id="delB"></p>
+        <p>Valor de C  <input type="number" name="Num3" id="delC"></p>
+        <input type="submit" value="Resolver" id="resb" onclick="resolver()">
+        <h1 id="res"></h1>
+    </main>
+
+    <script>
+        
+        let delA = document.querySelector("#delA")
+        let delB = document.querySelector("#delB")
+        let delC = document.querySelector("#delC")
+        let res = document.querySelector("#res")
+
+        function resolver() {
+
+            let delta = delB.value*2 - 4 * delA.value * delC.value
+            let raiz1 = Math.sqrt(delta)
+            let raiz = Number(raiz1).value
+            console.log(`Delta = ${delta}`)
+            console.log(`Raiz = ${raiz1}`)
+
+            if (delta < 0) {
+
+                res.innerHTML = `Delta = ${delta}. Sem continuação`
+
+            } else {
+
+                let cima1 = 1 * -delB.value + raiz1
+                let baixo1 = 2 * delA.value
+                let valA = cima1 / baixo1
+                console.log(cima1)
+                console.log(baixo1)
+                console.log(`Valor de A = ${valA}`)
+                
+                let cima2 = 1 * -delB.value - raiz1
+                let baixo2 = 2 * delA.value
+                let valB = cima1 / baixo1
+                console.log(cima2)
+                console.log(baixo2)
+                console.log(`Valor de B = ${valB}`)
+
+                res.innerHTML = `Solução(A = ${valA}, B = ${valB})`
+
+            }
+
+        }
+    </script>
+</body>
+</html>
