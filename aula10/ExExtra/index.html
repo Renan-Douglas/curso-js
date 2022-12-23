@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        img {
+            width: 70vw;
+            height: 70vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="are">
+        <img src="lampada-on.jpg" alt="ladskf" id="lamon">
+        <img src="lampada.jpg" alt="lamoff" id="lamof">
+    </div>
+
+    <script>
+
+        let lamf = document.querySelector('#lamof');
+        let lamo = document.querySelector('#lamon');
+
+        let tst = document;
+
+        lamf.addEventListener('mouseenter', entrar);
+        lamo.addEventListener('mouseout', sair);
+        lamf.addEventListener('click', clicar);
+
+        function entrar() {
+
+            lamo.style.cursor = 'pointer';
+            lamf.style.cursor = 'pointer';
+
+        }
+        
+        function sair() {
+
+            lamf.style.display = 'block';
+
+        }
+
+        function clicar() {
+
+            lamf.style.display = 'none';
+
+        }
+
+
+    </script>
+</body>
+</html>
